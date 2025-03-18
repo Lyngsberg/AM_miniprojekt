@@ -128,7 +128,7 @@ errors = [std_error_al, std_error_rand]
 # Plot bars with error bars (95% CI)
 ax.bar(labels, means, yerr=np.array(errors) * 1.96, capsize=10, color=['blue', 'orange'])
 ax.set_ylabel('Mean Squared Error (MSE)')
-ax.set_title('Comparison of Active Learning vs Random Sampling')
+ax.set_title(f' Active Learning vs Random Sampling\n(p-value = {p_value:.3f})')
 
 plt.show()
 
